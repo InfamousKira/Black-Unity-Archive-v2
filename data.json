@@ -1,0 +1,83 @@
+[
+    {
+        "id": "james_baldwin",
+        "type": "Person",
+        "name": "James Baldwin",
+        "dates": "1924-1987",
+        "summary": "Novelist, playwright, and activist who explored the intricacies of racial, sexual, and class distinctions.",
+        "key_terms": ["Literature", "Civil Rights", "Queer Theory", "Exile"],
+        "images": [
+            "https://upload.wikimedia.org/wikipedia/commons/f/f3/James_Baldwin_37_Allan_Warren.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/3/33/James_Baldwin_%281969%29.jpg"
+        ],
+        "connections": ["Civil Rights Movement", "The Fire Next Time", "Malcolm X", "Martin Luther King Jr."],
+        "detail": "<p>Baldwin's essays, such as <i>Notes of a Native Son</i>, explored the unspoken complexities of racial, sexual, and class distinctions in Western society. He was a vital voice during the Civil Rights Movement, offering a critique of both white racism and black despair.</p>",
+        "sources": ["https://www.poetryfoundation.org/poets/james-baldwin"]
+    },
+    {
+        "id": "haitian_revolution",
+        "type": "Event",
+        "name": "The Haitian Revolution",
+        "dates": "1791-1804",
+        "summary": "The only successful slave revolt in history that led to the founding of a free Black state.",
+        "key_terms": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Independence", "Napoleon"],
+        "images": [
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/San_Domingo.jpg"
+        ],
+        "connections": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Pan-Africanism"],
+        "detail": "<p>This revolution shook the world, challenging the beliefs of the era regarding black inferiority and the ability of enslaved people to achieve and maintain freedom. It resulted in the establishment of Haiti, the first independent black republic in the Americas.</p>",
+        "sources": ["https://library.brown.edu/haitihistory/"]
+    },
+    {
+        "id": "black_power_movement",
+        "type": "Movement",
+        "name": "Black Power Movement",
+        "dates": "1960s-1970s",
+        "summary": "A political and social movement advocating for self-determination for people of African descent.",
+        "key_terms": ["Self-Defense", "Pride", "Stokely Carmichael", "Black Panthers"],
+        "images": [
+            "https://upload.wikimedia.org/wikipedia/commons/a/a2/Black_Panther_demonstration_1969.jpg"
+        ],
+        "connections": ["Stokely Carmichael", "Malcolm X", "Black Panther Party", "Angela Davis"],
+        "detail": "<p>Emphasized racial pride and the creation of black political and cultural institutions to nurture and promote black collective interests. It challenged the non-violent philosophy of the early Civil Rights Movement.</p>",
+        "sources": ["https://nmaahc.si.edu/explore/stories/black-power"]
+    },
+    {
+        "id": "wretched_earth",
+        "type": "Resource",
+        "name": "The Wretched of the Earth",
+        "dates": "1961",
+        "summary": "Frantz Fanon's analysis of the dehumanizing effects of colonization and the path to liberation.",
+        "key_terms": ["Colonialism", "Psychology", "Violence", "Decolonization"],
+        "images": [],
+        "connections": ["Frantz Fanon", "Pan-Africanism", "Black Power Movement"],
+        "detail": "<p>A psychiatric and psychologic analysis of the dehumanizing effects of colonization upon the individual and the nation. It is considered a handbook for the Black revolution.</p>",
+        "sources": ["https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth"]
+    },
+    {
+        "id": "toussaint_louverture",
+        "type": "Person",
+        "name": "Toussaint Louverture",
+        "dates": "1743-1803",
+        "summary": "The most prominent leader of the Haitian Revolution.",
+        "key_terms": ["Haiti", "General", "Abolition"],
+        "images": [
+            "https://upload.wikimedia.org/wikipedia/commons/6/6e/Toussaint_Louverture_-_Girardin.jpg"
+        ],
+        "connections": ["Haitian Revolution", "Jean-Jacques Dessalines"],
+        "detail": "<p>He fought for the Spanish against the French; then for France against Spain and Great Britain; and finally, he fought on behalf of Saint-Domingue in the era of Napoleonic France.</p>",
+        "sources": ["https://www.britannica.com/biography/Toussaint-Louverture"]
+    },
+    {
+        "id": "malcolm_x",
+        "type": "Person",
+        "name": "Malcolm X",
+        "dates": "1925-1965",
+        "summary": "Human rights activist and prominent figure in the Nation of Islam.",
+        "key_terms": ["Nation of Islam", "Pan-Africanism", "Civil Rights"],
+        "images": ["https://upload.wikimedia.org/wikipedia/commons/c/c5/Malcolm_X_NYWTS_2a.jpg"],
+        "connections": ["Black Power Movement", "Martin Luther King Jr.", "Elijah Muhammad"],
+        "detail": "<p>A courageous advocate for the rights of blacks, a man who indicted white America in the harshest terms for its crimes against black Americans; detractors accused him of preaching racism and violence.</p>",
+        "sources": ["https://www.malcolmx.com/"]
+    }
+]
