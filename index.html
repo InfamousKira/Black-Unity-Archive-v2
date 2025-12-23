@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Black Unity Archive V2</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>The Black Unity Archive</h1>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('timeline')">Timeline</button>
+            <button onclick="showSection('persons')">Persons</button>
+            <button onclick="showSection('movements')">Movements</button>
+            <button onclick="showSection('mindmap')">Mind Map</button>
+            <button onclick="showSection('resources')">Resources Library</button>
+        </nav>
+        
+        <div class="search-wrapper">
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterContent()" placeholder="Search the archive...">
+            </div>
+            <div class="search-filters">
+                <label><input type="checkbox" checked onchange="filterContent()" value="all" id="filterAll"> All</label>
+                <label><input type="checkbox" onchange="filterContent()" value="Person"> Persons</label>
+                <label><input type="checkbox" onchange="filterContent()" value="Movement"> Movements/Events</label>
+                <label><input type="checkbox" onchange="filterContent()" value="Resource"> Resources</label>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="loadingMessage" style="text-align: center; color: var(--accent-color);">
+            <h2>Loading Archive Data...</h2>
+        </div> 
+    
+        <section id="home">
+            <div id="welcome-sequence" style="text-align: center; min-height: 120px; margin-bottom: 30px; padding: 20px; font-style: italic;">
+                <h2 id="welcome-text" class="fade-text"></h2>
+            </div>
+            <h2>Daily Review</h2>
+            <div id="dailyReviewContent" class="content-card"></div>
+        </section>
+
+        <section id="timeline">
+            <div class="timeline-header">
+                <h2>Historical Timeline</h2>
+                <div class="timeline-controls">
+                    <button onclick="toggleTimelineView('vertical')">Vertical View</button>
+                    <button onclick="toggleTimelineView('horizontal')">Horizontal View</button>
+                </div>
+            </div>
+            <div class="timeline-jumps">
+                <span>Jump to: </span>
+                <button onclick="scrollToYear(1700)">1700s</button>
+                <button onclick="scrollToYear(1800)">1800s</button>
+                <button onclick="scrollToYear(1900)">1900s</button>
+                <button onclick="scrollToYear(1950)">1950s</button>
+                <button onclick="scrollToYear(2000)">2000s</button>
+            </div>
+            <div id="timelineContainer" class="vertical-timeline"></div>
+        </section>
+
+        <section id="persons">
+            <h2>Key Figures</h2>
+            <div id="personsGrid" class="content-grid"></div>
+        </section>
+
+        <section id="movements">
+            <h2>Important Movements & Events</h2>
+            <div id="movementsGrid" class="content-grid"></div>
+        </section>
+
+        <section id="mindmap">
+            <h2>Connections Mind Map</h2>
+            <div class="button-group" style="margin-bottom: 10px;">
+                <button onclick="resetMindMap()" style="background-color: var(--accent-color); color: var(--background-color);">Reset Map View</button>
+                <button onclick="downloadMindMap()" style="background-color: var(--primary-color); color: var(--secondary-color);">Save Map as Image</button>
+            </div>
+            <div id="mindmapContainer"></div>
+        </section>
+
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            <div id="resourcesGrid" class="content-grid"></div>
+        </section>
+
+        <section id="detailPage" class="hidden">
+            <button onclick="hideDetailPage()">Back to List</button>
+            <h2 id="detailTitle"></h2>
+            <p id="detailDates"></p>
+            
+            <div id="detailImages" class="image-gallery"></div>
+            
+            <div id="detailContent"></div>
+            
+            <h3>External Sources:</h3>
+            <ul id="detailSources"></ul>
+        </section>
+    </main>
+
+    <div id="floatingNotes" class="floating-notes minimized">
+        <div class="notes-header">
+            <span>Archive Scratchpad</span>
+            <div class="notes-controls">
+                <button onclick="copyNotes('globalNotes')" title="Copy Text">📋</button>
+                <button onclick="toggleNotes()" title="Minimize/Maximize">_</button>
+            </div>
+        </div>
+        <div class="notes-body">
+            <div class="notes-warning">⚠️ Save to Google Keep! Notes are local only.</div>
+            <textarea id="globalNotes" placeholder="Type your thoughts here..." onkeyup="saveNotes('globalNotes')"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
