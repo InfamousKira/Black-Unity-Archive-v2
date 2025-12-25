@@ -76,11 +76,10 @@
 
         <section id="mindmap">
             <h2>Connections Mind Map</h2>
-            <div class="button-group" style="margin-bottom: 10px;">
-                <button onclick="resetMindMap()" style="background-color: var(--accent-color); color: var(--background-color);">Reset Map View</button>
-                <button onclick="downloadMindMap()" style="background-color: var(--primary-color); color: var(--secondary-color);">Save Map as Image</button>
+            <div id="mindmapContainer" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 400px; text-align: center; background-color: var(--card-background); border: 1px solid var(--primary-color); border-radius: var(--border-radius);">
+                <h2 style="font-size: 2.5em; margin-bottom: 10px;">Coming Soon</h2>
+                <p style="max-width: 500px; color: #ccc;">Visualizing the complex connections between our history's greatest figures and movements.</p>
             </div>
-            <div id="mindmapContainer"></div>
         </section>
 
         <section id="resources">
@@ -107,7 +106,7 @@
             <span>Archive Scratchpad</span>
             <div class="notes-controls">
                 <button onclick="copyNotes('globalNotes')" title="Copy Text">📋</button>
-                <button onclick="toggleNotes()" title="Minimize/Maximize">_</button>
+                <button id="notesToggleIcon" onclick="toggleNotes()" title="Minimize/Maximize" style="font-size: 1.5em; line-height: 0.5;">+</button>
             </div>
         </div>
         <div class="notes-body">
