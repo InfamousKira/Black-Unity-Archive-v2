@@ -48,11 +48,7 @@ function showSection(sectionId) {
     if (sectionId !== 'detailPage') lastActiveListSection = sectionId;
 
     if (sectionId === 'home') renderDailyReview();
-    else if (sectionId === 'mindmap') {
-        // Re-render map to fit container correctly
-        document.getElementById('mindmapContainer').innerHTML = '';
-        renderMindMap(archiveData);
-    }
+    // Mind Map render logic removed for "Coming Soon" state
 }
 
 function hideDetailPage() {
@@ -112,15 +108,19 @@ function renderContentGrids(data) {
             card.className = 'content-card';
             card.onclick = () => showDetail(item.id);
             
-            // Image Logic (Show first image as thumbnail if exists)
+            // Image Logic
             let imgHTML = '';
             if (item.images && item.images.length > 0) {
                 imgHTML = `<img src="${item.images[0]}" class="card-thumb" alt="${item.name}">`;
             }
 
+            // RE-ADDED KEY TERMS HERE
             card.innerHTML = `
                 ${imgHTML}
                 <h3 class="card-title">${item.name} <span style="font-size:0.7em; color:#888;">(${item.dates})</span></h3>
+                <p style="font-size: 0.85em; color: var(--accent-color); margin-bottom: 5px;">
+                   <strong>Keys:</strong> ${item.key_terms.join(', ')}
+                </p>
                 <p>${item.summary}</p>
             `;
             grid.appendChild(card);
@@ -149,7 +149,7 @@ function showDetail(id) {
         });
     }
 
-    // Render Sources (Clickable)
+    // Render Sources
     const sourcesList = document.getElementById('detailSources');
     sourcesList.innerHTML = item.sources.map(src => {
         if (src.startsWith('http')) {
@@ -180,7 +180,8 @@ function renderTimeline(data) {
         
         // Add color styling for events
         if (item.type === 'Event') {
-            div.style.borderTopColor = '#2e7d32'; // Green override
+            div.style.borderTopColor = '#2e7d32'; // Green override for horizontal
+            div.style.borderLeftColor = '#2e7d32'; // Green override for vertical
         }
 
         div.innerHTML = `
@@ -193,8 +194,6 @@ function renderTimeline(data) {
 }
 
 function scrollToYear(year) {
-    // Basic jump implementation
-    // Finds the first element that has a year ID >= the requested year
     const container = document.getElementById('timelineContainer');
     const eventDivs = Array.from(container.children);
     
@@ -209,68 +208,19 @@ function scrollToYear(year) {
     }
 }
 
-// --- Mind Map ---
-function renderMindMap(data) {
-    const nodes = [];
-    const edges = [];
-    
-    // Color Map (Green for Events as requested)
-    const colorMap = {
-        'Person': '#A0522D', 
-        'Movement': '#DAA520', 
-        'Event': '#2e7d32', // GREEN
-        'Resource': '#4682B4'
-    };
-
-    data.forEach(item => {
-        nodes.push({
-            id: item.id,
-            label: item.name,
-            title: item.summary,
-            color: { background: colorMap[item.type] || '#777', border: '#FFF' },
-            font: { color: '#F8F8FF', size: 16, face: 'Georgia' },
-            shape: 'box'
-        });
-
-        if (item.connections) {
-            item.connections.forEach(targetName => {
-                const target = data.find(i => i.name === targetName);
-                if (target) {
-                    edges.push({ from: item.id, to: target.id });
-                }
-            });
-        }
-    });
-
-    const networkData = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
-    const container = document.getElementById('mindmapContainer');
-    
-    // Enable manipulation so he can move arrows if he wants
-    window.network = new vis.Network(container, networkData, {
-        physics: { enabled: true, stabilization: { iterations: 100 } },
-        interaction: { hover: true, dragNodes: true },
-        manipulation: { enabled: true, initiallyActive: false } 
-    });
-}
-
-function resetMindMap() {
-    renderMindMap(archiveData);
-}
-
-function downloadMindMap() {
-    const canvas = document.querySelector('#mindmapContainer canvas');
-    if (canvas) {
-        const link = document.createElement('a');
-        link.download = 'archive-map.png';
-        link.href = canvas.toDataURL();
-        link.click();
-    }
-}
-
 // --- Floating Notes ---
 function toggleNotes() {
     const notes = document.getElementById('floatingNotes');
+    const toggleBtn = document.getElementById('notesToggleIcon');
+    
     notes.classList.toggle('minimized');
+    
+    // Check if minimized or not to change the icon
+    if (notes.classList.contains('minimized')) {
+        toggleBtn.textContent = '+'; // Show Plus when small
+    } else {
+        toggleBtn.textContent = '–'; // Show Minus when big
+    }
 }
 
 function saveNotes(id) {
