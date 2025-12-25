@@ -922,5 +922,112 @@
         "connections": ["Haile Selassie", "Kwame Nkrumah", "African Union"],
         "detail": "<p>Founded in Addis Ababa, its main goal was to eradicate colonialism and apartheid from the continent.</p>",
         "sources": ["https://www.blackpast.org/global-african-history/organization-african-unity-1963-2002/"]
-    }
+    },
+    {
+        "id": "queen_mother_moore",
+        "type": "Person",
+        "name": "Audley 'Queen Mother' Moore",
+        "dates": "1898-1997",
+        "summary": "Civil rights leader and a primary figure in the modern reparations movement.",
+        "key_terms": ["Reparations", "Black Nationalism", "Garveyite"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Queen+Mother+Moore"],
+        "connections": ["Marcus Garvey", "Malcolm X", "Reparations"],
+        "detail": "<p>She founded the Universal Association of Ethiopian Women and is best known for her lifelong advocacy for reparations for descendants of enslaved people.</p>",
+        "sources": ["https://www.blackpast.org/african-american-history/moore-audley-queen-mother-1898-1997/"]
+    },
+    {
+        "id": "h_rap_brown",
+        "type": "Person",
+        "name": "H. Rap Brown (Jamil Al-Amin)",
+        "dates": "1943-Present",
+        "summary": "Chairman of SNCC during the Black Power movement and Justice Minister of the Black Panther Party.",
+        "key_terms": ["Black Power", "SNCC", "Die Nigger Die!"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=H+Rap+Brown"],
+        "connections": ["Stokely Carmichael", "Black Panther Party", "SNCC"],
+        "detail": "<p>Known for his militant rhetoric, he famously proclaimed that 'violence is as American as cherry pie'.</p>",
+        "sources": ["https://snccdigital.org/people/h-rap-brown/"]
+    },
+    {
+        "id": "henry_sylvester_williams",
+        "type": "Person",
+        "name": "Henry Sylvester Williams",
+        "dates": "1869-1911",
+        "summary": "Trinidadian lawyer and writer who organized the first Pan-African Conference in 1900.",
+        "key_terms": ["Pan-Africanism", "1900 Conference", "Lawyer"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Henry+Sylvester+Williams"],
+        "connections": ["W.E.B. Du Bois", "Pan-African Congresses"],
+        "detail": "<p>He formed the African Association to promote and protect the interests of all subjects claiming African descent.</p>",
+        "sources": ["https://www.blackpast.org/global-african-history/williams-henry-sylvester-1869-1911/"]
+    },
+    {
+        "id": "alexander_crummell",
+        "type": "Person",
+        "name": "Alexander Crummell",
+        "dates": "1819-1898",
+        "summary": "Pioneering African American minister, academic, and Pan-Africanist.",
+        "key_terms": ["Civilization", "Liberia", "Christianity"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Alexander+Crummell"],
+        "connections": ["W.E.B. Du Bois", "Edward Wilmot Blyden"],
+        "detail": "<p>He spent 20 years in Liberia advocating for the concept of Pan-Africanism and the 'civilizing' mission of Black Christianity.</p>",
+        "sources": ["https://plato.stanford.edu/entries/alexander-crummell/"]
+    },
+    {
+        "id": "constance_cummings_john",
+        "type": "Person",
+        "name": "Constance Cummings-John",
+        "dates": "1918-2000",
+        "summary": "Sierra Leonean educationist and politician.",
+        "key_terms": ["Sierra Leone", "Women's Rights", "Anti-Colonialism"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Constance+Cummings-John"],
+        "connections": ["I.T.A. Wallace-Johnson", "West African Youth League"],
+        "detail": "<p>The first woman to serve as mayor of Freetown, she was a fierce advocate for women's political participation in Africa.</p>",
+        "sources": ["https://www.blackpast.org/global-african-history/cummings-john-constance-agatha-1918-2000/"]
+    },
+    {
+        "id": "duse_mohamed_ali",
+        "type": "Person",
+        "name": "Dusé Mohamed Ali",
+        "dates": "1866-1945",
+        "summary": "Sudanese-Egyptian actor and journalist who mentored Marcus Garvey.",
+        "key_terms": ["Journalism", "Pan-Africanism", "African Times"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Duse+Mohamed+Ali"],
+        "connections": ["Marcus Garvey", "Pan-Africanism"],
+        "detail": "<p>His newspaper, <i>The African Times and Orient Review</i>, was a critical platform for anti-colonial thought in London.</p>",
+        "sources": ["https://www.blackpast.org/global-african-history/ali-duse-mohamed-1866-1945/"]
+    },
+    {
+        "id": "alice_kinloch",
+        "type": "Person",
+        "name": "Alice Victoria Alexander Kinloch",
+        "dates": "Unknown-1900s",
+        "summary": "South African activist instrumental in the formation of the African Association.",
+        "key_terms": ["Pan-African Association", "South Africa", "Mining"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Alice+Kinloch"],
+        "connections": ["Henry Sylvester Williams", "Pan-African Congresses"],
+        "detail": "<p>She exposed the conditions of Black miners in South Africa and co-founded the African Association in London.</p>",
+        "sources": ["https://www.blackpast.org/"]
+    },
+    {
+        "id": "dara_abubakari",
+        "type": "Person",
+        "name": "Dara Abubakari (Virginia Collins)",
+        "dates": "1915-2012",
+        "summary": "Community activist and Vice President of the Republic of New Africa.",
+        "key_terms": ["Republic of New Africa", "Separation", "Activism"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Dara+Abubakari"],
+        "connections": ["Republic of New Africa", "Black Power"],
+        "detail": "<p>A survivor of the Garvey movement era who became a staunch advocate for an independent Black nation in the US South.</p>",
+        "sources": ["https://www.thehistorymakers.org/biography/dara-abubakari-41"]
+    },
+    {
+        "id": "black_reconstruction",
+        "type": "Resource",
+        "name": "Black Reconstruction in America",
+        "dates": "1935",
+        "summary": "W.E.B. Du Bois's history of the post-Civil War era.",
+        "key_terms": ["Reconstruction", "General Strike", "Labor"],
+        "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Black+Reconstruction"],
+        "connections": ["W.E.B. Du Bois", "Marxism"],
+        "detail": "<p>It challenged the dominant Dunning School view that Reconstruction was a failure, arguing instead that it was a noble attempt at democracy killed by white supremacy.</p>",
+        "sources": ["
 ]
