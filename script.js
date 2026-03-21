@@ -14,12 +14,10 @@ async function loadDataAndBuildInterface() {
         const response = await fetch('data.json');
         archiveData = await response.json();
 
-        // Build all sections using the high-performance renderer
         renderContentGrids(archiveData);
         renderDailyReview();
         renderTimeline(archiveData);
         
-        // Show Home and start the welcome sequence
         showSection('home');
         setTimeout(() => { runWelcomeSequence(); }, 100);
         
@@ -32,20 +30,17 @@ async function loadDataAndBuildInterface() {
 
 // 2. Navigation
 function showSection(sectionId) {
-    // Hide all sections
     document.querySelectorAll('main section').forEach(s => {
         s.classList.remove('active');
         s.classList.add('hidden');
     });
 
-    // Show target section
     const activeSection = document.getElementById(sectionId);
     if (activeSection) {
         activeSection.classList.add('active');
         activeSection.classList.remove('hidden');
     }
 
-    // Remember the last list we looked at so the "Back" button works
     if (sectionId !== 'detailPage') {
         lastActiveListSection = sectionId;
     }
@@ -63,14 +58,12 @@ function renderContentGrids(data) {
     const grids = {
         'Person': document.getElementById('personsGrid'),
         'Movement': document.getElementById('movementsGrid'),
-        'Event': document.getElementById('movementsGrid'), // Events share the Movements grid
+        'Event': document.getElementById('movementsGrid'),
         'Resource': document.getElementById('resourcesGrid')
     };
 
-    // Clear existing content
     Object.values(grids).forEach(g => { if(g) g.innerHTML = ''; });
 
-    // Create virtual DocumentFragments to prevent lag
     const fragments = {
         'Person': document.createDocumentFragment(),
         'Movement': document.createDocumentFragment(),
@@ -80,15 +73,13 @@ function renderContentGrids(data) {
     data.forEach(entry => {
         const card = document.createElement('div');
         card.className = 'content-card';
-        // Make the whole card clickable
         card.onclick = () => showDetail(entry.id);
         
-        // Auto-Placeholder Logic
         const imageSrc = (entry.images && entry.images.length > 0 && entry.images[0] !== "") 
             ? entry.images[0] 
             : `https://placehold.co/400x300/1e1e1e/DAA520?text=${encodeURIComponent(entry.name)}`;
 
-        // Build the card with Lazy Loading
+        // BUTTON TEXT CHANGED TO "Learn More"
         card.innerHTML = `
             <img src="${imageSrc}" class="card-thumb" alt="${entry.name}" loading="lazy">
             <h3 class="card-title">${entry.name} <span style="font-size:0.7em; color:#888;">(${entry.dates})</span></h3>
@@ -96,17 +87,15 @@ function renderContentGrids(data) {
                <strong>Keys:</strong> ${(entry.key_terms || []).join(', ')}
             </p>
             <p>${entry.summary}</p>
-            <button style="margin-top:auto; padding:8px; background:var(--primary-color); color:var(--secondary-color); border:none; border-radius:4px; cursor:pointer;">Explore More</button>
+            <button style="margin-top:auto; padding:8px; background:var(--primary-color); color:var(--secondary-color); border:none; border-radius:4px; cursor:pointer;">Learn More</button>
         `;
         
-        // Route to the correct fragment
         let targetType = entry.type === 'Event' ? 'Movement' : entry.type;
         if (fragments[targetType]) {
             fragments[targetType].appendChild(card);
         }
     });
 
-    // Push all fragments to the screen in one move
     if (grids['Person']) grids['Person'].appendChild(fragments['Person']);
     if (grids['Movement']) grids['Movement'].appendChild(fragments['Movement']);
     if (grids['Resource']) grids['Resource'].appendChild(fragments['Resource']);
@@ -119,12 +108,10 @@ function showDetail(id) {
 
     showSection('detailPage');
     
-    // Populate text fields
     document.getElementById('detailTitle').textContent = item.name;
     document.getElementById('detailDates').textContent = `Period: ${item.dates}`;
     document.getElementById('detailContent').innerHTML = item.detail;
 
-    // Populate images
     const gallery = document.getElementById('detailImages');
     gallery.innerHTML = '';
     
@@ -135,13 +122,11 @@ function showDetail(id) {
             gallery.appendChild(img);
         });
     } else {
-        // Fallback for detail page if no image exists
         const img = document.createElement('img');
         img.src = `https://placehold.co/600x400/1e1e1e/DAA520?text=${encodeURIComponent(item.name)}`;
         gallery.appendChild(img);
     }
 
-    // Populate external sources
     const sourcesList = document.getElementById('detailSources');
     sourcesList.innerHTML = (item.sources || []).map(src => {
         if (src.startsWith('http')) {
@@ -151,10 +136,20 @@ function showDetail(id) {
     }).join('');
 }
 
-// 5. Search & Filters
+// 5. Search & Filters (UPDATED FOR GLOBAL SEARCH PAGE)
 function filterContent() {
     const input = document.getElementById('searchInput').value.toUpperCase();
     
+    // If the search bar is cleared, go back to the previous tab
+    if (input.trim() === '') {
+        const returnTab = lastActiveListSection === 'search-results-section' ? 'home' : lastActiveListSection;
+        showSection(returnTab);
+        return;
+    }
+
+    // Automatically switch to the new Search Results page
+    showSection('search-results-section');
+
     const showAll = document.getElementById('filterAll').checked;
     const showPerson = document.querySelector('input[value="Person"]').checked;
     const showMovement = document.querySelector('input[value="Movement"]').checked;
@@ -177,7 +172,43 @@ function filterContent() {
         return typeMatch && textMatch;
     });
 
-    renderContentGrids(filtered);
+    renderSearchResults(filtered);
+}
+
+// NEW FUNCTION: Renders directly to the search page
+function renderSearchResults(data) {
+    const grid = document.getElementById('searchResultsGrid');
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    if (data.length === 0) {
+        grid.innerHTML = '<p style="font-style: italic; color: #888;">No matching entries found in the archive.</p>';
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    data.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'content-card';
+        card.onclick = () => showDetail(entry.id);
+        
+        const imageSrc = (entry.images && entry.images.length > 0 && entry.images[0] !== "") 
+            ? entry.images[0] 
+            : `https://placehold.co/400x300/1e1e1e/DAA520?text=${encodeURIComponent(entry.name)}`;
+
+        // BUTTON TEXT CHANGED TO "Learn More"
+        card.innerHTML = `
+            <img src="${imageSrc}" class="card-thumb" alt="${entry.name}" loading="lazy">
+            <h3 class="card-title">${entry.name} <span style="font-size:0.7em; color:#888;">(${entry.dates})</span></h3>
+            <p style="font-size: 0.85em; color: var(--accent-color); margin-bottom: 5px;">
+               <strong>Keys:</strong> ${(entry.key_terms || []).join(', ')}
+            </p>
+            <p>${entry.summary}</p>
+            <button style="margin-top:auto; padding:8px; background:var(--primary-color); color:var(--secondary-color); border:none; border-radius:4px; cursor:pointer;">Learn More</button>
+        `;
+        fragment.appendChild(card);
+    });
+    grid.appendChild(fragment);
 }
 
 // 6. Timeline Logic
@@ -264,10 +295,12 @@ function renderDailyReview() {
     const dailyReviewEl = document.getElementById('dailyReviewContent');
     if (!archiveData.length) return;
     const item = archiveData[Math.floor(Math.random() * archiveData.length)];
+    
+    // BUTTON TEXT CHANGED TO "Learn More"
     dailyReviewEl.innerHTML = `
         <h3 class="card-title">${item.name} (${item.type})</h3>
         <p>${item.summary}</p>
-        <button style="padding:8px 15px; background:var(--primary-color); color:var(--secondary-color); border:none; border-radius:4px; cursor:pointer;" onclick="showDetail('${item.id}')">Review Entry</button>
+        <button style="padding:8px 15px; background:var(--primary-color); color:var(--secondary-color); border:none; border-radius:4px; cursor:pointer;" onclick="showDetail('${item.id}')">Learn More</button>
     `;
 }
 
