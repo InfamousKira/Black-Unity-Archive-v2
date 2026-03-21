@@ -95,8 +95,44 @@ section.active { display: block; }
 
 /* Timeline Styles */
 .timeline-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+
+/* NEW: Styles for the Vertical/Horizontal toggle buttons */
+.timeline-controls button {
+    background-color: var(--accent-color); /* Yellow/Gold fill instead of default white */
+    color: var(--background-color); /* Dark text so it's easy to read on the yellow */
+    border: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 25px; /* A little more rounded */
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.timeline-controls button:hover {
+    transform: scale(1.05); /* Slight pop effect on hover */
+    opacity: 0.9;
+}
+
 .timeline-jumps { margin: 10px 0; padding: 10px; background: #222; border-radius: 5px; }
-.timeline-jumps button { background: none; border: 1px solid var(--primary-color); color: var(--secondary-color); margin: 0 5px; cursor: pointer; }
+
+/* UPDATED: Rounded rectangles for jumping years */
+.timeline-jumps button { 
+    background: transparent; 
+    border: 2px solid var(--primary-color); /* Orange/Sienna outline */
+    color: var(--secondary-color); 
+    margin: 0 5px; 
+    padding: 6px 16px; /* Adds space inside to create the rectangle shape */
+    border-radius: 25px; /* Creates the rounded corners */
+    cursor: pointer; 
+    transition: all 0.3s ease; /* Smooth transition for the hover fill */
+}
+
+/* The fill-in effect when hovered */
+.timeline-jumps button:hover {
+    background-color: var(--primary-color); /* Fills with the orange/sienna */
+    color: var(--secondary-color);
+}
 
 /* Vertical Timeline */
 .vertical-timeline { position: relative; margin-left: 20px; border-left: 3px solid var(--primary-color); padding-left: 20px; }
