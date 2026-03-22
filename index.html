@@ -109,13 +109,16 @@
     <div id="floatingNotes" class="floating-notes minimized">
         <div class="notes-header">
             <span>Archive Scratchpad</span>
-            <div class="notes-controls">
-                <button onclick="copyNotes('globalNotes')" title="Copy Text">📋</button>
-                <button id="notesToggleIcon" onclick="toggleNotes()" title="Minimize/Maximize" style="font-size: 1.5em; line-height: 0.5;">+</button>
+            <div class="notes-controls" style="display: flex; align-items: center; gap: 8px;">
+                <button onclick="copyNotes('globalNotes')" title="Copy Text" style="display: flex; flex-direction: column; align-items: center; line-height: 1;">
+                    <span>📋</span>
+                    <span style="font-size: 0.45em; margin-top: 3px;">Copy</span>
+                </button>
+                <button id="notesToggleIcon" onclick="toggleNotes()" title="Minimize/Maximize" style="font-size: 1.5em; line-height: 0.5; margin-bottom: 5px;">+</button>
             </div>
         </div>
         <div class="notes-body">
-            <div class="notes-warning">⚠️ Save to Google Keep! Notes are local only.</div>
+            <div class="notes-warning" style="font-weight: bold;">⚠️ Save to an external source! Notes are only local.</div>
             <textarea id="globalNotes" placeholder="Type your thoughts here..." onkeyup="saveNotes('globalNotes')"></textarea>
         </div>
     </div>
