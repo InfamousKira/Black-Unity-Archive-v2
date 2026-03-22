@@ -90,11 +90,13 @@ nav button:hover { background-color: var(--accent-color); color: var(--backgroun
 #searchInput {
     width: 100%;
     padding: 12px;
-    border-radius: 25px;
-    border: 1px solid var(--accent-color);
+    /* Changed from 25px to the standard border-radius */
+    border-radius: var(--border-radius); 
+    /* Changed from --accent-color (Gold) to --primary-color (Sienna/Orange) */
+    border: 2px solid var(--primary-color); 
     background: #222;
     color: white;
-    text-align: center; /* Centers the placeholder text */
+    text-align: center;
 }
 
 /* Center the checkboxes/filters */
