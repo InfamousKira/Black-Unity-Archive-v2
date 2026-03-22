@@ -39,16 +39,17 @@ a:hover { color: var(--primary-color); }
 /* Header & Nav */
 header {
     text-align: center;
-    padding: 60px 20px; /* Increased padding to show more of the image */
-    background-color: #1e1e1e; /* Fallback color */
-    
-    /* This adds a dark tint over the photo so your gold text is easy to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('header-bg.jpg');
-    
+    padding: 80px 20px;
+    background-color: #1e1e1e;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('header-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 3px solid var(--accent-color);
+    /* Changed from --accent-color (Gold) back to --primary-color (Orange) */
+    border-bottom: 3px solid var(--primary-color); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
