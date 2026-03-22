@@ -27,12 +27,15 @@ a:hover { color: var(--primary-color); }
 .fade-text {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
-    color: var(--accent-color);
+    color: var(--accent-color); /* The text itself remains gold */
     font-size: 1.4em;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     display: block;
+    /* Restore the orange line underneath */
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 15px;
 }
 .fade-text.visible { opacity: 1 !important; }
 
