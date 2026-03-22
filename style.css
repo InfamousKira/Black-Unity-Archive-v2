@@ -70,15 +70,41 @@ nav button {
 nav button:hover { background-color: var(--accent-color); color: var(--background-color); }
 
 /* Search */
-.search-wrapper { width: 100%; max-width: 600px; text-align: center; }
-.search-container input {
-    width: 100%; padding: 10px;
-    border: 1px solid var(--primary-color);
-    border-radius: var(--border-radius);
-    background: var(--background-color);
+/* Center the entire search area */
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Ensure the input box stays centered and has a nice width */
+.search-container {
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid var(--accent-color);
+    background: #222;
+    color: white;
+    text-align: center; /* Centers the placeholder text */
+}
+
+/* Center the checkboxes/filters */
+.search-filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     color: var(--secondary-color);
 }
-.search-filters { margin-top: 10px; display: flex; justify-content: center; gap: 15px; font-size: 0.9em; }
 
 /* Layouts */
 main { padding: 2em 5%; }
