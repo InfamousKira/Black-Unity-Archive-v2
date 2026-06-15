@@ -110,7 +110,7 @@ function showDetail(id) {
     
     document.getElementById('detailTitle').textContent = item.name;
     document.getElementById('detailDates').textContent = `Period: ${item.dates}`;
-    document.getElementById('detailContent').innerHTML = item.detail;
+    document.getElementById('detailContent').innerHTML = `<div class="preserve-breaks">${item.detail}</div>`;
 
     const gallery = document.getElementById('detailImages');
     gallery.innerHTML = '';
