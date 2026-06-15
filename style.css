@@ -224,13 +224,6 @@ section.active { display: block; }
     display: flex;
     flex-direction: column;
 }
-
-/* Preserves formatting and \n\n line breaks from JSON data */
-.preserve-breaks {
-    white-space: pre-wrap;
-    margin-top: 10px;
-}
-
 .floating-notes.minimized .notes-body { display: none; }
 .floating-notes.minimized { width: 200px; }
 
@@ -255,9 +248,4 @@ section.active { display: block; }
 .image-gallery { display: flex; gap: 10px; overflow-x: auto; margin-bottom: 20px; }
 .image-gallery img { height: 200px; border-radius: 5px; border: 2px solid var(--primary-color); }
 #mindmapContainer { height: 600px; background: var(--card-background); border: 1px solid var(--primary-color); }
-
-}
-/* Forces all paragraphs inside cards and timeline events to read \n\n */
-.content-card p, .timeline-event p, #dailyReviewContent p {
-    white-space: pre-wrap;
 }
