@@ -224,6 +224,13 @@ section.active { display: block; }
     display: flex;
     flex-direction: column;
 }
+
+/* Preserves formatting and \n\n line breaks from JSON data */
+.preserve-breaks {
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+
 .floating-notes.minimized .notes-body { display: none; }
 .floating-notes.minimized { width: 200px; }
 
