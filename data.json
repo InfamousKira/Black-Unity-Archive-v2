@@ -8,7 +8,7 @@
         "key_terms": ["Literature", "Civil Rights", "Queer Theory", "Exile"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=James+Baldwin"],
         "connections": ["Civil Rights Movement", "The Fire Next Time", "Malcolm X", "Martin Luther King Jr."],
-        "detail": "<p>James Baldwin was a fierce, unflinching essayist, novelist, and playwright who vivisected the American conscience. Refusing to sugarcoat the realities of white supremacy, Baldwin exposed the deep psychological sickness of anti-Black racism and the self-destructive nature of white delusion. As a Black, queer man navigating the mid-20th century, his work—such as <i>The Fire Next Time</i>—articulated the rage, exhaustion, and profound humanity of marginalized people.</p>He dismantled the facade of American exceptionalism, arguing that the nation could never achieve its stated ideals until it confronted the blood and brutality of its racial history. Baldwin did not merely write about race; he documented the spiritual rot of the oppressor and the absolute necessity of Black liberation.</p>",
+        "detail": "<p>James Baldwin was a fierce, unflinching essayist, novelist, and playwright who vivisected the American conscience. Refusing to sugarcoat the realities of white supremacy, Baldwin exposed the deep psychological sickness of anti-Black racism and the self-destructive nature of white delusion. As a Black, queer man navigating the mid-20th century, his work—such as <i>The Fire Next Time</i>—articulated the rage, exhaustion, and profound humanity of marginalized people.</p><p>He dismantled the facade of American exceptionalism, arguing that the nation could never achieve its stated ideals until it confronted the blood and brutality of its racial history. Baldwin did not merely write about race; he documented the spiritual rot of the oppressor and the absolute necessity of Black liberation.</p>",
         "sources": ["https://www.poetryfoundation.org/poets/james-baldwin"]
     },
     {
@@ -16,11 +16,11 @@
         "type": "Event",
         "name": "The Haitian Revolution",
         "dates": "1791-1804",
-        "summary": "The only successful slave revolt in history that led to the founding of a free Black state.",
+        "summary": "The only successful slave revolt in history that led to the founding of a free Black state.<br><br>This revolution shook the world, challenging the beliefs of the era regarding black inferiority. It resulted in the establishment of Haiti, the first independent black republic in the Americas.",
         "key_terms": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Independence", "Napoleon"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Haitian+Revolution"],
         "connections": ["Toussaint Louverture", "Jean-Jacques Dessalines", "The Black Jacobins"],
-        "detail": "<p>This revolution shook the world, challenging the beliefs of the era regarding black inferiority. It resulted in the establishment of Haiti, the first independent black republic in the Americas.</p>",
+        "detail": "<p>The Haitian Revolution (1791–1804) was the deadliest and most successful slave rebellion in human history, fundamentally shattering the global myth of white invincibility and Black inferiority. Enslaved Africans in the French colony of Saint-Domingue endured some of the most sadistic and lethal conditions on Earth, where millions were worked to death to fuel the European sugar and coffee trade. Rising up against their oppressors, they waged a brutal, scorched-earth war against the French, British, and Spanish empires.</p><p>Though victorious in securing their freedom and establishing the first free Black republic, Haiti was immediately punished by the global white powers. To lift a crippling naval blockade, Haiti was forced by threat of war to pay devastating “reparations” to their former French enslavers for the “loss of property”—economically strangling the nation and stunting its development for centuries to come.</p>",
         "sources": ["https://library.brown.edu/haitihistory/"]
     },
     {
@@ -28,11 +28,11 @@
         "type": "Movement",
         "name": "Black Power Movement",
         "dates": "1960s-1970s",
-        "summary": "A political and social movement advocating for self-determination for people of African descent.",
+        "summary": "A political and social movement advocating for self-determination for people of African descent.<br><br>Emphasized racial pride and the creation of black political and cultural institutions. It challenged the non-violent philosophy of the early Civil Rights Movement.",
         "key_terms": ["Self-Defense", "Pride", "Stokely Carmichael", "Black Panthers"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Black+Power"],
         "connections": ["Stokely Carmichael", "Malcolm X", "Black Panther Party", "Angela Davis"],
-        "detail": "<p>Emphasized racial pride and the creation of black political and cultural institutions. It challenged the non-violent philosophy of the early Civil Rights Movement.</p>",
+        "detail": "<p>The Black Power Movement emerged in the 1960s as a necessary, militant evolution of the Black freedom struggle, rejecting the sanitized, non-violent accommodationist narratives of the early Civil Rights era. Driven by leaders who recognized that integration into a white supremacist system would not end police brutality, systemic poverty, or social death, the movement demanded absolute self-determination, political autonomy, and armed self-defense.</p><p>It was unapologetically pro-Black, seeking to decolonize the minds of African descendants while building independent economic and social institutions. Recognizing its power, the US government met the movement with devastating state-sanctioned violence, notably through the FBI's COINTELPRO, which illegally surveilled, imprisoned, and assassinated Black leadership to crush the threat of Black liberation.</p>",
         "sources": ["https://nmaahc.si.edu/explore/stories/black-power"]
     },
     {
@@ -40,11 +40,11 @@
         "type": "Resource",
         "name": "The Wretched of the Earth",
         "dates": "1961",
-        "summary": "Frantz Fanon's analysis of the dehumanizing effects of colonization and the path to liberation.",
+        "summary": "Frantz Fanon's analysis of the dehumanizing effects of colonization and the path to liberation.<br><br>A psychiatric and psychologic analysis of the dehumanizing effects of colonization. It is considered a handbook for the Black revolution.",
         "key_terms": ["Colonialism", "Psychology", "Violence", "Decolonization"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Wretched+of+the+Earth"],
         "connections": ["Frantz Fanon", "Pan-Africanism", "Black Power Movement"],
-        "detail": "<p>A psychiatric and psychologic analysis of the dehumanizing effects of colonization. It is considered a handbook for the Black revolution.</p>",
+        "detail": "<p>Frantz Fanon’s The Wretched of the Earth is a raw, foundational text of anti-colonial struggle that diagnoses the severe psychological and physical trauma inflicted by European imperialism. Fanon, a psychiatrist from Martinique who joined the Algerian liberation movement, argued that colonialism is not merely a system of economic exploitation but an absolute violence that dehumanizes the colonized, reducing them to an animalistic status in the eyes of the colonizer.</p><p>He controversially but compellingly asserted that true decolonization cannot happen through peaceful negotiation or appeals to the oppressor's morality. Instead, he argued it requires a violent, cathartic upheaval to overthrow the oppressor, reclaim the psychological humanity of the colonized, and destroy the colonial infrastructure entirely.</p>",
         "sources": ["https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth"]
     },
     {
@@ -52,11 +52,11 @@
         "type": "Resource",
         "name": "The Conservation of Races",
         "dates": "1897",
-        "summary": "A speech by W.E.B. Du Bois arguing that race is a socio-historical concept, not just biological.",
+        "summary": "A speech by W.E.B. Du Bois arguing that race is a socio-historical concept, not just biological.<br><br>Du Bois argues that the black race has a specific cultural message to deliver to the world and must maintain its identity to do so.",
         "key_terms": ["Du Bois", "Sociology", "Talented Tenth"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Conservation+of+Races"],
         "connections": ["W.E.B. Du Bois", "Pan-African Congresses"],
-        "detail": "<p>Du Bois argues that the black race has a specific cultural message to deliver to the world and must maintain its identity to do so.</p>",
+        "detail": "<p>In his 1897 address The Conservation of Races, W.E.B. Du Bois confronted the prevailing pseudo-scientific racism of the era, which was actively being used to biologically justify the subjugation, lynching, and disenfranchisement of Black people. Du Bois argued that race is not primarily a biological trait, but a socio-historical and spiritual construct.</p><p>He posited that the Black race had a distinct, vital message and cultural genius to offer humanity, one that could only be preserved through racial solidarity and Pan-African unity. Rather than striving for complete assimilation into a white American culture that actively sought their erasure, Du Bois urged Black people to conserve their identity and build their own institutions as a cohesive, global force.</p>",
         "sources": ["https://www.webdubois.org/dbConserve.html"]
     },
     {
@@ -64,11 +64,11 @@
         "type": "Movement",
         "name": "Rastafari Movement",
         "dates": "1930s-Present",
-        "summary": "A religious and political movement that developed in Jamaica, regarding Haile Selassie I as a messianic figure.",
+        "summary": "A religious and political movement that developed in Jamaica, regarding Haile Selassie I as a messianic figure.<br><br>Combined Protestant Christianity, mysticism, and a Pan-African political consciousness. It views Africa (Zion) as the original birthplace of mankind.",
         "key_terms": ["Haile Selassie", "Zion", "Babylon", "Reggae"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Rastafari"],
         "connections": ["Haile Selassie I", "Marcus Garvey", "Bob Marley"],
-        "detail": "<p>Combined Protestant Christianity, mysticism, and a Pan-African political consciousness. It views Africa (Zion) as the original birthplace of mankind.</p>",
+        "detail": "<p>Born in the impoverished, fiercely oppressed communities of 1930s Jamaica, the Rastafari Movement erupted not merely as a religion, but as a militant, anti-colonial rejection of global white supremacy. For centuries, the British Empire had inflicted physical and psychological degradation upon the African diaspora, enforcing a colonial Christianity designed to teach Black people that their subjugation was divinely ordained. Rastafari flipped this violent paradigm on its head. By crowning Haile Selassie I of Ethiopia as the living God, Rastafarians reclaimed their divine agency, declaring Africa as Zion and the oppressive Western world as “Babylon”—a corrupt, doomed system built on the blood of stolen labor.</p><p>The movement was criminalized and violently hunted by colonial authorities who recognized its potent threat to the racial hierarchy. Police routinely raided Rastafari communes, brutalizing adherents and violently shaving their dreadlocks—a sacred symbol of their covenant and their defiance of Eurocentric standards of acceptability. Yet, the movement could not be crushed. It ultimately weaponized reggae music to broadcast a global gospel of Black liberation, cultural resistance, and the inevitable collapse of the white imperialist world order.</p>",
         "sources": ["https://www.britannica.com/topic/Rastafari"]
     },
     {
@@ -76,11 +76,11 @@
         "type": "Movement",
         "name": "Afrocentrism",
         "dates": "1980s-Present",
-        "summary": "A cultural ideology focusing on the history of Black Africans and their role in history.",
+        "summary": "A cultural ideology focusing on the history of Black Africans and their role in history.<br><br>A response to Eurocentric attitudes, it seeks to reclaim African history and place African ideals at the center of any analysis that involves African culture.",
         "key_terms": ["Molefi Kete Asante", "Nile Valley", "Agency"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Afrocentrism"],
         "connections": ["Cheikh Anta Diop", "The Destruction of Black Civilization"],
-        "detail": "<p>A response to Eurocentric attitudes, it seeks to reclaim African history and place African ideals at the center of any analysis that involves African culture.</p>",
+        "detail": "<p>Afrocentrism emerged as a radical intellectual wrecking ball aimed directly at the foundation of Eurocentric historical paradigms. For centuries, Western academia operated as an arm of white supremacy, deliberately erasing, stealing, or minimizing the monumental contributions of African civilizations to justify the transatlantic slave trade and global colonization. The racist narrative dictated that Africa was a “dark continent” devoid of history, intellect, or civilization until the arrival of the white conqueror. Afrocentrism systematically dismantled this lie.</p><p>Scholars like Cheikh Anta Diop and Molefi Kete Asante fought to reclaim the narrative, centering the African experience and proving the undeniable Blackness of foundational civilizations like ancient Kemet (Egypt). This movement is not merely an academic exercise; it is a psychological reclamation project. By restoring the stolen memory of African architectural, scientific, and philosophical genius, Afrocentrism arms the diaspora against the unrelenting cultural warfare designed to keep them alienated from their own ancestral legacy and greatness.</p>",
         "sources": ["https://en.wikipedia.org/wiki/Afrocentrism"]
     },
     {
@@ -88,11 +88,11 @@
         "type": "Person",
         "name": "Nelson Mandela",
         "dates": "1918-2013",
-        "summary": "South African anti-apartheid revolutionary and the first Black head of state of South Africa.",
+        "summary": "South African anti-apartheid revolutionary and the first Black head of state of South Africa.<br><br>After serving 27 years in prison, Mandela negotiated the end of apartheid and became a global symbol of peace and forgiveness.",
         "key_terms": ["Apartheid", "ANC", "Robben Island", "Reconciliation"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Nelson+Mandela"],
         "connections": ["Anti-Apartheid Movement", "Steve Biko", "African National Congress"],
-        "detail": "<p>After serving 27 years in prison, Mandela negotiated the end of apartheid and became a global symbol of peace and forgiveness.</p>",
+        "detail": "<p></p>",
         "sources": ["https://www.nelsonmandela.org/"]
     },
     {
@@ -100,11 +100,11 @@
         "type": "Person",
         "name": "Toussaint Louverture",
         "dates": "1743-1803",
-        "summary": "The most prominent leader of the Haitian Revolution.",
+        "summary": "The most prominent leader of the Haitian Revolution.<br><br>He fought for the Spanish against the French; then for France against Spain and Great Britain; and finally, he fought on behalf of Saint-Domingue.",
         "key_terms": ["Haiti", "General", "Abolition"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Toussaint+Louverture"],
         "connections": ["Haitian Revolution", "Jean-Jacques Dessalines"],
-        "detail": "<p>He fought for the Spanish against the French; then for France against Spain and Great Britain; and finally, he fought on behalf of Saint-Domingue.</p>",
+        "detail": "<p></p>",
         "sources": ["https://www.britannica.com/biography/Toussaint-Louverture"]
     },
     {
@@ -112,11 +112,11 @@
         "type": "Person",
         "name": "Jean-Jacques Dessalines",
         "dates": "1758-1806",
-        "summary": "A leader of the Haitian Revolution and the first ruler of an independent Haiti.",
+        "summary": "A leader of the Haitian Revolution and the first ruler of an independent Haiti.<br><br>Dessalines declared Saint-Domingue independent on January 1, 1804, renaming it Haiti.",
         "key_terms": ["Independence", "Emperor", "1804"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Dessalines"],
         "connections": ["Haitian Revolution", "Toussaint Louverture"],
-        "detail": "<p>Dessalines declared Saint-Domingue independent on January 1, 1804, renaming it Haiti.</p>",
+        "detail": "<p></p>",
         "sources": ["https://www.britannica.com/biography/Jean-Jacques-Dessalines"]
     },
     {
@@ -124,11 +124,11 @@
         "type": "Person",
         "name": "Aimé Césaire",
         "dates": "1913-2008",
-        "summary": "Martinican poet, author, and politician; a founder of the Négritude movement.",
+        "summary": "Martinican poet, author, and politician; a founder of the Négritude movement.<br><br>His text <i>Discourse on Colonialism</i> is a classic text of anti-colonial literature.",
         "key_terms": ["Négritude", "Surrealism", "Colonialism"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Aime+Cesaire"],
         "connections": ["Négritude Movement", "Frantz Fanon", "Léopold Sédar Senghor"],
-        "detail": "<p>His text <i>Discourse on Colonialism</i> is a classic text of anti-colonial literature.</p>",
+        "detail": "<p></p>",
         "sources": ["https://www.poetryfoundation.org/poets/aime-cesaire"]
     },
     {
@@ -136,11 +136,11 @@
         "type": "Person",
         "name": "Haile Selassie I",
         "dates": "1892-1975",
-        "summary": "Emperor of Ethiopia and a defining figure in modern Ethiopian history and the Rastafari movement.",
+        "summary": "Emperor of Ethiopia and a defining figure in modern Ethiopian history and the Rastafari movement.<br><br>He led the resistance against the Italian invasion of Ethiopia and was instrumental in the founding of the OAU.",
         "key_terms": ["Ethiopia", "Rastafari", "OAU"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Haile+Selassie"],
         "connections": ["Rastafari Movement", "Organization of African Unity"],
-        "detail": "<p>He led the resistance against the Italian invasion of Ethiopia and was instrumental in the founding of the OAU.</p>",
+        "detail": "<p></p>",
         "sources": ["https://www.britannica.com/biography/Haile-Selassie-I"]
     },
     {
@@ -148,11 +148,11 @@
         "type": "Person",
         "name": "Patrice Lumumba",
         "dates": "1925-1961",
-        "summary": "Congolese independence leader and the first Prime Minister of the Democratic Republic of the Congo.",
+        "summary": "Congolese independence leader and the first Prime Minister of the Democratic Republic of the Congo.<br><br>His government was deposed in a coup during the Congo Crisis, leading to his assassination, which turned him into a martyr for the Pan-African cause.",
         "key_terms": ["Congo", "Anti-Imperialism", "Pan-Africanism"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Patrice+Lumumba"],
         "connections": ["African Independence Movements", "Kwame Nkrumah"],
-        "detail": "<p>His government was deposed in a coup during the Congo Crisis, leading to his assassination, which turned him into a martyr for the Pan-African cause.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.blackpast.org/global-african-history/lumumba-patrice-1925-1961/"]
     },
     {
@@ -160,11 +160,11 @@
         "type": "Person",
         "name": "Kwame Nkrumah",
         "dates": "1909-1972",
-        "summary": "First President of Ghana and a founding father of Pan-Africanism.",
+        "summary": "First President of Ghana and a founding father of Pan-Africanism.<br><br>He led the Gold Coast to independence from Britain in 1957. He envisioned a 'United States of Africa'.",
         "key_terms": ["Ghana", "Pan-Africanism", "Scientific Socialism"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Kwame+Nkrumah"],
         "connections": ["OAU", "Africa Must Unite", "Consciencism"],
-        "detail": "<p>He led the Gold Coast to independence from Britain in 1957. He envisioned a 'United States of Africa'.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.britannica.com/biography/Kwame-Nkrumah"]
     },
     {
@@ -172,11 +172,11 @@
         "type": "Person",
         "name": "Malcolm X",
         "dates": "1925-1965",
-        "summary": "Human rights activist and prominent figure in the Nation of Islam.",
+        "summary": "Human rights activist and prominent figure in the Nation of Islam.<br><br>A courageous advocate for the rights of blacks, a man who indicted white America in the harshest terms for its crimes against black Americans.",
         "key_terms": ["Nation of Islam", "Pan-Africanism", "Civil Rights"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Malcolm+X"],
         "connections": ["Black Power Movement", "The Autobiography of Malcolm X", "Elijah Muhammad"],
-        "detail": "<p>A courageous advocate for the rights of blacks, a man who indicted white America in the harshest terms for its crimes against black Americans.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.malcolmx.com/"]
     },
     {
@@ -184,11 +184,11 @@
         "type": "Person",
         "name": "W.E.B. Du Bois",
         "dates": "1868-1963",
-        "summary": "Sociologist, historian, civil rights activist, and author.",
+        "summary": "Sociologist, historian, civil rights activist, and author.<br><br>One of the most important thinkers in American history. He co-founded the NAACP and was a leader of the Niagara Movement.",
         "key_terms": ["NAACP", "The Crisis", "Double Consciousness"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=WEB+Du+Bois"],
         "connections": ["The Souls of Black Folk", "Black Reconstruction", "Pan-African Congresses"],
-        "detail": "<p>One of the most important thinkers in American history. He co-founded the NAACP and was a leader of the Niagara Movement.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.naacp.org/oldest-and-boldest/naacp-history-w-e-b-dubois/"]
     },
     {
@@ -196,11 +196,11 @@
         "type": "Person",
         "name": "Frantz Fanon",
         "dates": "1925-1961",
-        "summary": "West Indian psychiatrist and political philosopher.",
+        "summary": "West Indian psychiatrist and political philosopher.<br><br>His works are influential in the fields of post-colonial studies, critical theory, and Marxism.",
         "key_terms": ["Decolonization", "Psychopathology", "Algeria"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Frantz+Fanon"],
         "connections": ["The Wretched of the Earth", "Black Skin, White Masks", "Aimé Césaire"],
-        "detail": "<p>His works are influential in the fields of post-colonial studies, critical theory, and Marxism.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://plato.stanford.edu/entries/frantz-fanon/"]
     },
     {
@@ -208,11 +208,11 @@
         "type": "Person",
         "name": "Thomas Sankara",
         "dates": "1949-1987",
-        "summary": "Burkinabé military officer and socialist revolutionary.",
+        "summary": "Burkinabé military officer and socialist revolutionary.<br><br>Known as 'Africa's Che Guevara', he renamed the country Burkina Faso ('Land of Incorruptible People') and launched massive social and ecological programs.",
         "key_terms": ["Burkina Faso", "Anti-Imperialism", "Women's Rights"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Thomas+Sankara"],
         "connections": ["Thomas Sankara Speaks", "Pan-Africanism"],
-        "detail": "<p>Known as 'Africa's Che Guevara', he renamed the country Burkina Faso ('Land of Incorruptible People') and launched massive social and ecological programs.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.blackpast.org/global-african-history/sankara-thomas-1949-1987/"]
     },
     {
@@ -220,11 +220,11 @@
         "type": "Person",
         "name": "Steve Biko",
         "dates": "1946-1977",
-        "summary": "South African anti-apartheid activist and founder of the Black Consciousness Movement.",
+        "summary": "South African anti-apartheid activist and founder of the Black Consciousness Movement.<br><br>His famous slogan 'Black is Beautiful' challenged the psychological inferiority complex instilled by apartheid.",
         "key_terms": ["Black Consciousness", "Apartheid", "SASO"],
         "images": ["https://placehold.co/400x300/1e1e1e/DAA520?text=Steve+Biko"],
         "connections": ["Black Consciousness Movement", "I Write What I Like", "Nelson Mandela"],
-        "detail": "<p>His famous slogan 'Black is Beautiful' challenged the psychological inferiority complex instilled by apartheid.</p>",
+        "detail": "<p></p><p></p>",
         "sources": ["https://www.saha.org.za/biko/index.htm"]
     },
     {
